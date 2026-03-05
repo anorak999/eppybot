@@ -5,7 +5,7 @@
 ### 📍 Location
 Your standalone EppyBot executable is located at:
 ```
-/home/anorak/Works/eppybot/dist/EppyBot
+dist/EppyBot
 ```
 
 **File size**: ~40 MB (includes Python runtime and all dependencies)
@@ -15,19 +15,19 @@ Your standalone EppyBot executable is located at:
 ## 🎯 How to Use
 
 ### Method 1: Double-Click (Easiest)
-1. Navigate to `/home/anorak/Works/eppybot/dist/`
+1. Navigate to `<PROJECT_ROOT>/dist/`
 2. Double-click the **EppyBot** file
 3. The application will launch!
 
 ### Method 2: From Terminal
 ```bash
-/home/anorak/Works/eppybot/dist/EppyBot
+dist/EppyBot
 ```
 
 ### Method 3: Add to Application Menu
 ```bash
 # Copy the standalone desktop file
-cp /home/anorak/Works/eppybot/eppybot-standalone.desktop ~/.local/share/applications/
+cp packaging/eppybot-standalone.desktop.template ~/.local/share/applications/
 
 # Update database
 update-desktop-database ~/.local/share/applications/
@@ -118,12 +118,12 @@ Use the **Python script** (`eppybot.py`)
 
 ### Run Standalone Version
 ```bash
-/home/anorak/Works/eppybot/dist/EppyBot
+dist/EppyBot
 ```
 
 ### Run Python Version
 ```bash
-cd /home/anorak/Works/eppybot
+cd <PROJECT_ROOT>
 python3 eppybot.py
 ```
 

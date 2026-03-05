@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=EppyBot (Standalone)
+Comment=Professional Image Enhancement Suite - Standalone Executable
+Exec=/home/anorak/Works/eppybot/dist/EppyBot
+Icon=/home/anorak/Works/eppybot/eppybot_icon.png
+Terminal=false
+Categories=Graphics;Photography;
+Keywords=image;photo;enhance;upscale;4k;
+StartupNotify=true

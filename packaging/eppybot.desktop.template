@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=EppyBot
+Comment=Professional Image Enhancement Suite
+Exec=/usr/bin/python3 /home/anorak/Works/eppybot/eppybot.py
+Icon=/home/anorak/Works/eppybot/eppybot_icon.png
+Terminal=false
+Categories=Graphics;Photography;
+Keywords=image;photo;enhance;upscale;4k;
+StartupNotify=true

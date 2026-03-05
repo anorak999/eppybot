@@ -27,7 +27,7 @@ The standalone executable for EppyBot can be found in the `dist` directory after
 
 1.  **Navigate to the `dist` directory:**
     ```bash
-    cd /home/anorak/Works/eppybot/dist
+    cd dist
     ```
 2.  **Run the EppyBot executable:**
     ```bash
@@ -37,26 +37,22 @@ The standalone executable for EppyBot can be found in the `dist` directory after
 
 ### Creating a Desktop Shortcut (Optional, for Linux)
 
-To create a convenient desktop shortcut, you can use the provided `.desktop` file.
+To create a convenient desktop shortcut, you can use the provided `.desktop` file template located in the `packaging/` directory.
 
-1.  **Copy the `.desktop` file:**
+1.  **Copy the template:**
     ```bash
-    cp /home/anorak/Works/eppybot/eppybot.desktop ~/.local/share/applications/
+    cp packaging/eppybot.desktop.template ~/.local/share/applications/eppybot.desktop
     ```
-2.  **Edit the `.desktop` file:** Open the copied file with a text editor (e.g., `gedit ~/.local/share/applications/eppybot.desktop`) and ensure the `Exec` and `Icon` paths point to the correct locations of your executable and icon file.
+2.  **Edit the file:** Open the copied file with a text editor and ensure the `Exec` and `Icon` paths point to the correct locations of your project.
 
-    Example `eppybot.desktop` content:
+    Example:
     ```ini
     [Desktop Entry]
     Name=EppyBot
-    Comment=Professional Image Enhancement Suite
-    Exec=/home/anorak/Works/eppybot/dist/EppyBot
-    Icon=/home/anorak/Works/eppybot/eppybot_icon.png
-    Terminal=false
-    Type=Application
-    Categories=Graphics;
+    Exec=/absolute/path/to/eppybot/eppybot.py
+    Icon=/absolute/path/to/eppybot/eppybot_icon.png
+    ...
     ```
-    *Make sure to replace `/home/anorak/Works/eppybot/dist/EppyBot` with the actual path to your executable and `/home/anorak/Works/eppybot/eppybot_icon.png` with the actual path to the icon if they are different.*
 
 3.  **Make it executable:**
     ```bash
@@ -90,7 +86,7 @@ If you wish to run EppyBot from its Python source code or modify it, follow thes
 
 1.  **Clone the repository (or navigate to the project directory):**
     ```bash
-    cd /home/anorak/Works/eppybot
+    cd <project_directory>
     ```
 2.  **Install dependencies:**
     ```bash
@@ -112,7 +108,7 @@ python eppybot.py
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd /home/anorak/Works/eppybot
+    cd <project_directory>
     ```
 3.  **Clean previous builds (optional but recommended):**
     ```bash

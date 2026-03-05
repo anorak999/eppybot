@@ -12,7 +12,7 @@ There are **three methods** to run EppyBot as a desktop application with a click
 
 ```bash
 # Copy the desktop file to your local applications directory
-cp /home/anorak/Works/eppybot/eppybot.desktop ~/.local/share/applications/
+cp packaging/eppybot.desktop.template ~/.local/share/applications/eppybot.desktop
 
 # Update desktop database
 update-desktop-database ~/.local/share/applications/
@@ -31,7 +31,7 @@ update-desktop-database ~/.local/share/applications/
 
 ```bash
 # Copy desktop file to Desktop
-cp /home/anorak/Works/eppybot/eppybot.desktop ~/Desktop/
+cp packaging/eppybot.desktop.template ~/Desktop/
 
 # Make it executable
 chmod +x ~/Desktop/eppybot.desktop
@@ -55,7 +55,7 @@ pip3 install pyinstaller
 ### Create Executable:
 
 ```bash
-cd /home/anorak/Works/eppybot
+cd <PROJECT_ROOT>
 
 # Create standalone executable
 pyinstaller --onefile \
@@ -68,7 +68,7 @@ pyinstaller --onefile \
 
 ### Find Your Executable:
 
-The executable will be in: `/home/anorak/Works/eppybot/dist/EppyBot`
+The executable will be in: `dist/EppyBot`
 
 You can then:
 - Double-click to run
@@ -83,10 +83,10 @@ You can then:
 
 ```bash
 # Copy desktop file to system applications
-sudo cp /home/anorak/Works/eppybot/eppybot.desktop /usr/share/applications/
+sudo cp packaging/eppybot.desktop.template /usr/share/applications/
 
 # Copy icon to system icons
-sudo cp /home/anorak/Works/eppybot/eppybot_icon.png /usr/share/pixmaps/
+sudo cp eppybot_icon.png /usr/share/pixmaps/
 
 # Update desktop database
 sudo update-desktop-database
@@ -98,21 +98,21 @@ sudo update-desktop-database
 
 ### Option A: Application Menu (Easiest)
 ```bash
-cp /home/anorak/Works/eppybot/eppybot.desktop ~/.local/share/applications/
+cp packaging/eppybot.desktop.template ~/.local/share/applications/eppybot.desktop
 update-desktop-database ~/.local/share/applications/
 ```
 Then search for "EppyBot" in your app launcher!
 
 ### Option B: Desktop Icon
 ```bash
-cp /home/anorak/Works/eppybot/eppybot.desktop ~/Desktop/
+cp packaging/eppybot.desktop.template ~/Desktop/
 chmod +x ~/Desktop/eppybot.desktop
 ```
 Double-click the icon on your desktop!
 
 ### Option C: Run from Terminal
 ```bash
-cd /home/anorak/Works/eppybot
+cd <PROJECT_ROOT>
 ./eppybot.sh
 ```
 
@@ -123,7 +123,7 @@ cd /home/anorak/Works/eppybot
 - **Icon File**: `eppybot_icon.png`
 - **Design**: Modern black & white camera/enhancement symbol
 - **Format**: PNG with transparency
-- **Location**: `/home/anorak/Works/eppybot/eppybot_icon.png`
+- **Location**: `eppybot_icon.png`
 
 ---
 
@@ -143,8 +143,8 @@ gio set ~/Desktop/eppybot.desktop metadata::trusted true
 
 ### Permission denied?
 ```bash
-chmod +x /home/anorak/Works/eppybot/eppybot.sh
-chmod +x /home/anorak/Works/eppybot/eppybot.desktop
+chmod +x packaging/eppybot.sh
+chmod +x packaging/eppybot.desktop.template
 ```
 
 ---
@@ -165,7 +165,7 @@ For the best experience, use **Method 1** to add EppyBot to your application men
 
 ```bash
 # One command to install:
-cp /home/anorak/Works/eppybot/eppybot.desktop ~/.local/share/applications/ && update-desktop-database ~/.local/share/applications/
+cp packaging/eppybot.desktop.template ~/.local/share/applications/eppybot.desktop && update-desktop-database ~/.local/share/applications/
 ```
 
 Then just search for "EppyBot" in your application launcher! 🚀
