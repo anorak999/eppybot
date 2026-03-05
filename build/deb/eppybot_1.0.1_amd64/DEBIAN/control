@@ -1,0 +1,9 @@
+Package: eppybot
+Version: 1.0.1
+Section: graphics
+Priority: optional
+Architecture: amd64
+Maintainer: EppyBot Maintainers <maintainers@example.com>
+Depends: python3, python3-tk, python3-pil, python3-pil.imagetk
+Description: Professional Image Enhancement Suite
+ Desktop image enhancement application with 4K upscaling.
